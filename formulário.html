@@ -45,16 +45,16 @@
 <fieldset>
     <legend> Trabalhando com inputs</legend>
     <!-- Input tex -->
-    <input type="text"
+    <!-- <input type="text"
     placeholder="Preencha o seu nome"
     size="60"
     minlength="8"
     maxlength="20"
     title="Preencha os dados"    
     >
-    <br>
+    <br> -->
     <!-- Input Number -->
-
+<!-- 
     <input type="number"
     size="50"
     minlength="6"
@@ -62,9 +62,9 @@
     title="Preencha os dados" 
     placeholder="idade"   
     >
-<br>
+<br> -->
     <!-- Input email -->
-    <input type="email"
+    <!-- <input type="email"
     size="50"
     minlength="5"
     maxlength="50"
@@ -72,10 +72,10 @@
     placeholder="email"
    
     >
-    <br>
+    <br> -->
     
 <!-- Input password -->
-<input type="password" 
+<!-- <input type="password" 
 size="24"
 minlength="8"
 maxlength="16"
@@ -85,27 +85,71 @@ pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
 required
 inputmode="numeric"
 >
-<br>
+<br> -->
 <!-- input hiddden -->
-<input type="hidden" value="Eu estou escondido"
+<!-- <input type="hidden" value="Eu estou escondido"
  name="">
  <br>
- <!-- input color -->
- <input type="color">
- <br>
+ input color
+  <input type="color">
+ <br> --> 
 
  <!-- Imput date -->
-  <input type="date" name="" id="">
+  <!-- <input type="date" name="" id="">
 
  <br>
  <input type="datetime-local" name="" id="">
  <br>
  <input type="time" name="" id="">
- <br>
+ 
+</fieldset> -->
+
+<label for="area">
+    Seu interesse maior é em qual área?
+</label>
+
+<div>
+<input type="checkbox"
+ value="Front-end Luan"
+ id="frontend"
+ name="interesse"
+ <label for="frontend"> Front-end Luan Monteiro></label>
+
+ > 
+
+
+<input type="checkbox" 
+value="Back-end regis"
+id="backend"
+name="interesse"
+> 
+<label for="backend">Back-end regis Santos
+</label>
+
+<input type="checkbox" 
+value="Design UI/UX Jenifer Vieira"
+id="designuiux"
+name="interesse"
+> 
+<label for="designuiux">Design UI/UX Jenifer Vieira</label>
+   
+</div>
+
+ <!-- interesse= Front-ed Luan MOnteiro, back -end regis Santos... -->
+
+ <br><br><br><br><br><br><br>
+
+ <h3>Deseja receber notificação da be.academy?</h3>
+ <label for="yes">Sim</label>
+ <input type="radio" name="notification" id="yes" value="yes">
+
+ <label for="no">Não</label>
+<input type="radio" name="notification" id="no" value="no">
+
+<!-- notification = yes ou no banco de dados -->
+<br>
     <button type="submit">Enviar</button>
-</fieldset>
 
-
-
+   
 
 </form>
