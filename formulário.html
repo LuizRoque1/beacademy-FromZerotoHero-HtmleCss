@@ -59,19 +59,49 @@
     size="50"
     minlength="6"
     maxlength="12"
-    title="Preencha os dados"    
+    title="Preencha os dados" 
+    placeholder="idade"   
     >
 <br>
-    <!-- Inout email -->
+    <!-- Input email -->
     <input type="email"
     size="50"
     minlength="5"
     maxlength="50"
     title="preencha seu melhor email"
-    placeholder="emal"
-    required
+    placeholder="email"
+   
     >
     <br>
+    
+<!-- Input password -->
+<input type="password" 
+size="24"
+minlength="8"
+maxlength="16"
+title="Coloque a senha"
+placeholder="senha "
+pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+required
+inputmode="numeric"
+>
+<br>
+<!-- input hiddden -->
+<input type="hidden" value="Eu estou escondido"
+ name="">
+ <br>
+ <!-- input color -->
+ <input type="color">
+ <br>
+
+ <!-- Imput date -->
+  <input type="date" name="" id="">
+
+ <br>
+ <input type="datetime-local" name="" id="">
+ <br>
+ <input type="time" name="" id="">
+ <br>
     <button type="submit">Enviar</button>
 </fieldset>
 
