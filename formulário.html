@@ -4,11 +4,11 @@
     *method (GET- padrão)
 
 -->
-<form action="" method="post">
-    <fieldset name="contato">
+ <form action="" method="post" enctype="multipart/form-data">
+ <!--   <fieldset name="contato">
         <legend>Preencha o Formulário de contato</legend>
 
-    </fieldset>
+    </fieldset> -->
 
 <!-- 
     Label
@@ -104,7 +104,7 @@ inputmode="numeric"
  
 </fieldset> -->
 
-<label for="area">
+<!-- <label for="area">
     Seu interesse maior é em qual área?
 </label>
 
@@ -135,19 +135,75 @@ name="interesse"
    
 </div>
 
- <!-- interesse= Front-ed Luan MOnteiro, back -end regis Santos... -->
+  interesse= Front-ed Luan MOnteiro, back -end regis Santos... -->
 
- <br><br><br><br><br><br><br>
+ <!-- <br><br><br><br><br><br><br>
 
  <h3>Deseja receber notificação da be.academy?</h3>
  <label for="yes">Sim</label>
  <input type="radio" name="notification" id="yes" value="yes">
 
  <label for="no">Não</label>
-<input type="radio" name="notification" id="no" value="no">
+<input type="radio" name="notification" id="no" value="no"> -->
+
+
 
 <!-- notification = yes ou no banco de dados -->
-<br>
+<!-- SELECT
+Elemento de formulário capaz d criar uma lista de opções 
+a serem selecionadas, Dropdown
+-->
+<label for="teacher">Professores</label>
+<select name="select-teacher" id="teacher" size="">
+    <option value="">Selecione um professor</option>
+    <option value="Luan santos">Luan Santos</option>
+    <option value="Moacir Garcia">Moacir Garcia</option>
+    <option value="Jenifer Vieira">Jenifer Vieira</option>
+    <option value="Regis Eduardo">Regis Eduardo</option>
+</select>
+
+
+<!-- Input Search
+    * Elemento usado para pesquisar conteúdo
+    * Parecido com o campo de "text" e pode receber atributos
+     e comportamentos
+
+-->
+
+<br><br>
+
+<input type="search"
+name="" 
+id="" 
+placeholder="Busque o usuário pelo id"
+size="24"
+pattern="[0-9]{0-3}"
+title="Busque por id de até 3 dígitos"
+required
+>
+
+<br><br><br>
+
+<!-- Manipulando arquivos com o file
+    * Usuário poderá fazer upload de 1 ou mais arquivos
+    deacordo com a extensão
+-->
+
+<input type="file" 
+name="" 
+id=""
+value=""
+accept="image/*"
+multiple
+
+>
+
+
+
+
+
+
+<br> 
     <button type="submit">Enviar</button>
 
    
