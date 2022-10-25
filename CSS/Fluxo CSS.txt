@@ -1,0 +1,51 @@
+/*
+*Especificidades
+Cálculo matemático desenvolvido automaticamente pela regra do CSS,onde cada tipo de seletor e origem do estilo possuemvalores a serem considerados
+
+0. Universal selector, combinator e pseudo-class (:not())
+1. Elementos do tipo seletor e pseudo-elementos (::before, ::after)
+10. Classes e atributos de seletores([type="radio"])
+100. Seletor ID
+1000.Inline
+------------------------------------------------------
+
+#At-Rules
+São regras relacionadas ao comportamento do CSS, começa com um sinal de @ seguido do identificador e valor.
+
+São as seguintes:
+@import serve para incluir um CSS externo.
+
+@import url("https:/linkexterno.com.br/style.css")
+
+@media são regras condicionais para vários dispositivos.
+
+@media ( min-width: 365px) {}
+
+@font-face é para colocar fontes externas.
+
+@font-face{}
+
+@keyframes serve para as animations do CSS.
+
+@keyframes animationname{}
+--------------------------------------------------------
+Combinadores(Combinators)
+Combnadores são utilizados para buscar e combinar seletores a fim de aplicar uma estilização.
+
+Tipos:
+
+Descendet combinator
+Identificado por um espaço entre os seletores
+- busca um elemento dentro de outro
+body ul li
+
+Child Combinator
+Identificado pelo sinal > entre dois seletores
+- Seleciona somente o elemento filho direto do pai
+- Elementos depois d filho direto serão desconsiderados
+
+Adjacent sibling combinator
+Identificado pelo sinal de + e ~ entre dois seletores
+- Busca somente o elemento do lado direito que é irmão direto da hierarquia
+
+*/
